@@ -9,6 +9,7 @@ import CreateTask from './pages/CreateTask';
 import EditTask from './pages/EditTask';
 import ProtectedRoute from './components/ProtectedRoute';
 import LoginPage from './pages/LoginPage';
+import CallbackPage from './pages/CallbackPage';
 
 const App: React.FC = () => {
   return (
@@ -24,6 +25,7 @@ const App: React.FC = () => {
           <div className="App">
             <Routes>
               <Route path="/login" element={<LoginPage />} />
+              <Route path="/callback" element={<CallbackPage />} />
               <Route path="/" element={
                 <ProtectedRoute>
                   <Dashboard />
